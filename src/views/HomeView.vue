@@ -1,75 +1,4 @@
- <!-- <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-   built files will be auto injected 
-  </body>
-</html>-->
-<!DOCTYPE html>
-<html lang="es-mx">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>iCake - inicio</title>
-  <link rel="stylesheet" href="static/css/tailwind.css">
-  <script src="static/js/flowbite.js"></script>
-</head>
-
-<body>
-  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
-    <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <a href="#" class="flex items-center">
-        <img src="static/img/logo_white_long.png" class="hidden mr-3 h-6 sm:h-10 dark:block" alt="iCake Logo">
-        <img src="static/img/logo_black_long.png" class="mr-3 h-6 sm:h-10 dark:hidden" alt="iCake Logo">
-      </a>
-      <button data-collapse-toggle="mobile-menu" type="button"
-        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="mobile-menu-2" aria-expanded="false">
-        <span class="sr-only">Abrir menú</span>
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
-        </svg>
-        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
-        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-          <li>
-            <a href="#"
-              class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-              aria-current="page">Inicio</a>
-          </li>
-          <li>
-            <a href="src/order.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Ordenar
-              un pastel</a>
-          </li>
-          <li>
-            <a href="src/login.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Iniciar
-              sesión</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--Carrusel de Imagénes-->
+<template>
   <div id="default-carousel" data-carousel="slide" class="relative">
     <div class="overflow-hidden relative h-56 sm:h-64 xl:h-80 2xl:h-96">
       <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
@@ -120,7 +49,6 @@
       </span>
     </button>
   </div>
-  <!--Testimonios-->
   <section class="mb-20 text-gray-700">
     <div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
       <h3 class="text-3xl font-bold mb-6 text-gray-800">Testimonios</h3>
@@ -304,15 +232,11 @@
       </div>
     </div>
   </section>
-</body>
-<footer class="p-4 bg-white  shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
-  <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="#"
-      class="hover:underline">iCake</a>.
-  </span>
-  <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-    <li>
-      <a href="src/about.html" class="mr-4 hover:underline md:mr-6 ">Acerca de nosotros</a>
-    </li>
-  </ul>
-</footer>
-</html>
+</template>
+
+<script>
+
+  export default {
+    name: "homeview",
+  };
+</script>
