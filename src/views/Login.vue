@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center p-4 w-full bg-gray-50 dark:bg-gray-800 h-screen">
-        <form class=" md:w-1/3 w-10/12" method="get" action="../src/vieworder.html">
+        <form class=" md:w-1/3 w-10/12" method="get" action="vieworders">
             <div class="mb-6">
                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Correo electrónico</label>
                 <input type="email" id="email"
